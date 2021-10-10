@@ -1,6 +1,8 @@
 MEN OF WAR ASSAULT SQUAD 2 SINGLEPLAYER LINUX
 ===============================
 
+This script will permit you play all mission for all factions in singleplayer, but not save or load any savegame (KEEP THIS IN MIND).
+
 ### Requeriments
 
 Python >= 3.0
