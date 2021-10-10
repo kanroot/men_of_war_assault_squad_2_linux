@@ -1,7 +1,7 @@
 import zipfile as zi
 import os
 
-# Edit line number seven
+# Edit line number eight
 # EXAMPLE OF PATH
 # /media/2A/SteamLibrary/steamapps/common/Men of War Assault Squad 2/
 
