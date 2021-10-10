@@ -66,7 +66,7 @@ def ReadFileZero(mission: []):
 
 
 def Message():
-    print("it's done! \n by kan")
+    print("it's done! \nby Kanroot")
 
 
 if __name__ == '__main__':
