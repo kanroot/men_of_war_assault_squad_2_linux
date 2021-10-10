@@ -1,10 +1,11 @@
 import zipfile as zi
 import os
 
+# Edit line number seven
 # EXAMPLE OF PATH
 # /media/2A/SteamLibrary/steamapps/common/Men of War Assault Squad 2/
 
-path = "/media/2A/SteamLibrary/steamapps/common/Men of War Assault Squad 2/"
+path = "EDIT THIS LINE"
 
 
 def ExtractPAK():
@@ -30,23 +31,16 @@ def FoldersMissions():
     path_folder_factions = path + "resource/map/single/"
     dirs = os.listdir(path_folder_factions)
     directories = []
-
-    # this order and check if is a folder
     for directory in dirs:
         n = directory
         directory = path_folder_factions + directory + "/"
         if os.path.isdir(directory):
             directories.append(n)
     directories.sort()
-
-    # create the path of factions
     path_missions = []
     for m in directories:
         path_missions.append(path_folder_factions + m + "/")
     return path_missions
-
-
-"nickname_to_delete"
 
 
 def MissionFactions(folder: []):
@@ -59,7 +53,6 @@ def MissionFactions(folder: []):
     return missions
 
 
-# se debe eliminar todos los {"autosave"}
 def ReadFileZero(mission: []):
     for zero in mission:
         zero_path = zero + "0.mi"
@@ -70,8 +63,10 @@ def ReadFileZero(mission: []):
                 if line.__contains__('{"autosave"}') is False:
                     f.write(line)
 
+
 def Message():
     print("it's done! by kan")
+
 
 if __name__ == '__main__':
     ExtractPAK()
