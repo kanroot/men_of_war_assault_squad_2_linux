@@ -5,7 +5,7 @@ import os
 # EXAMPLE OF PATH
 # /media/2A/SteamLibrary/steamapps/common/Men of War Assault Squad 2/
 
-path = "EDIT THIS LINE"
+path = "/media/2A/SteamLibrary/steamapps/common/Men of War Assault Squad 2/"
 
 
 def ExtractPAK():
@@ -18,8 +18,9 @@ def ExtractPAK():
         missions = MissionFactions(folders)
         ReadFileZero(missions)
         DeletePAK(path_zip)
+        Message()
     else:
-        print("PATH DO NOT EXISTS")
+        print("PATH DO NOT EXISTS, EDIT LINE NUMBER EIGHT")
 
 
 def DeletePAK(path_zip: str):
@@ -65,9 +66,8 @@ def ReadFileZero(mission: []):
 
 
 def Message():
-    print("it's done! by kan")
+    print("it's done! \n by kan")
 
 
 if __name__ == '__main__':
     ExtractPAK()
-    print("DONE!!!!")
