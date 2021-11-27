@@ -23,6 +23,6 @@ cd men_of_war_assault_squad_2_linux
 vim main.py 
 
 # to usage run -
-python main.py
+python3 main.py
 
 # by kanroot.
